@@ -56,3 +56,13 @@ Amusing algorithms and data-structures that power Lucene and Elasticsearch
      - Unions of the hashes are lossless.
    - HyperLogLog++ is an improvement to correct bias of this
  - t-digest is another algorithm similar, but for computing percentiles
+
+## Questions
+
+ - What is automaton for a regexp gets too complex
+   - Lucene has a maximum number of states in the automaton; won't let you run queries which have too many states.
+   - Only allow fuzzy queries with at most an edit distance of 2
+
+ - About updating document values
+   - Lucene is getting updatable document values
+     - will be segmented, have a generation per segment; not in-place updates
