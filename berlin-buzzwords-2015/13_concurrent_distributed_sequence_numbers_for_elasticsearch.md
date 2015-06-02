@@ -2,6 +2,8 @@
 
 http://berlinbuzzwords.de/session/designing-concurrent-distributed-sequence-numbers-elasticsearch
 
+Slides: https://speakerdeck.com/bleskes/designing-concurrent-distributed-sequence-numbers-for-elasticsearch
+
 ## Document level versioning
 
  - useful
